@@ -8,6 +8,7 @@ public class PublicationDTO {
     private String title;
     private String content;
     private String category;
+    private Long userId;
 
     public PublicationDTO(){
 
@@ -24,6 +25,7 @@ public class PublicationDTO {
         title = entity.getTitle();
         content = entity.getContent();
         category = entity.getCategory();
+        userId = entity.getUser().getId();
     }
 
     public Long getId() {
@@ -40,5 +42,9 @@ public class PublicationDTO {
 
     public String getCategory() {
         return category;
+    }
+
+    public Long getUserId() {
+        return userId;
     }
 }

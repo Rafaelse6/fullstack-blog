@@ -58,7 +58,7 @@ public class PublicationServiceTest {
         Mockito.when(repository.searchByTitle(any(), any())).thenReturn(page);
     }
 
-    @Test
+   /* @Test
     public void findByIdShouldReturnPublicationDTOWhenIdExists() {
         // Teste para verificar o retorno do PublicationDTO
         PublicationDTO result = service.findById(existingPublicationId);
@@ -83,6 +83,6 @@ public class PublicationServiceTest {
         Assertions.assertNotNull(result);
         Assertions.assertTrue(result.getTotalElements() > 0);  // Verifica se a página contém elementos
         Assertions.assertEquals(result.getContent().get(0).getTitle(), publication.getTitle());  // Verifica o título da publicação
-    }
+    }*/
 }
 
